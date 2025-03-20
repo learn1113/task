@@ -13,3 +13,4 @@ repository一个仓库，利用commit可查看更改，fork指将别人的仓库
 8. 用`git push -f origin 分支名`将修改更新至github  
 9. 用pull request请求合并到github的主分支上  
 10. 成功后用`git branch -D 分支名`删除分支，再用`git pull origin main`更新主分支
+11. 
