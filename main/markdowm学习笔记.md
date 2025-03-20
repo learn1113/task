@@ -51,5 +51,31 @@ class ADBController:
 | 姓名 | 年龄 | 性别 |
 |----|----|----|  
 |小明|19|女|
+***
+## html  
+可以使用部分html标签
+***  
+## 数学公式与排版  
+
+$$\begin{aligned}
+f(x_1,y)=\frac{1}{2}x_1^{2x}+\sqrt[x_1]{y}\\
+\not=\\
+\approx\\
+\leq\\
+\geq\\
+\times\\
+\div\\
+\pm\\
+\sum\\
+\prod\\
+\coprod\\
+ \sin\pi\\
+  \int\\
+\iint\\
+y\prime\\
+\lim_{x\rightarrow+\infty}\\
+\cdots\\
+\end{aligned}$$
+
 
 
