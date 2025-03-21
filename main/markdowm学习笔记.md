@@ -1,5 +1,5 @@
 # markdown学习笔记  
-Markdown 本质上是 HTML 的简化子集，markdown文件最终会被输出为html格式。例如斜体 `*text*` 对应 `<i>text</i>`，图片 `![alt](url) `对应 `<img>` 标签。这种设计使得两者可以混合使用，复杂场景（如表格合并单元格、嵌入音视频）可通过直接插入 HTML 实现。总
+Markdown 本质上是 HTML 的简化子集，markdown文件最终会被输出为html格式。例如斜体 `*text*` 对应 `<i>text</i>`，图片 `![alt](url) `对应 `<img>` 标签。这种设计使得两者可以混合使用，复杂场景（如表格合并单元格、嵌入音视频）可通过直接插入 HTML 实现。
 ## 基本语法
 在markdown的代码里面换行
 只是加个空格  
