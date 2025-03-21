@@ -54,7 +54,40 @@ class ADBController:
 |小明|19|女|
 ***
 ## html  
-可以使用部分html标签
+以下是 Markdown 中常用的 HTML 标签分类及说明.  
+<u>内容</u>  
+<i>内容</i> 或 <em>内容</em>
+<strong>内容</strong> 或 <b>内容</b>  
+<del>内容</del> 或 <s>内容</s>  
+<del>删除线</del>   
+<mark>内容</mark>
+
+上标：<sup>内容</sup>
+示例：X<sup>2</sup> → X2
+下标：<sub>内容</sub>
+示例：H<sub>2</sub>O → H2O
+
+强制换行：`<br>`  
+
+水平线：`<hr>`
+
+自定义区块：<div>内容</div>
+段落对齐：<p align="center">居中对齐</p>
+
+图片：<img src="" alt="描述" width="200">
+<a href="#section1">跳转到章节</a>
+
+
+
+合并单元格：
+html
+<table>
+  <tr><td colspan="2">合并列</td></tr>
+  <tr><td rowspan="2">合并行</td></tr>
+</table>
+
+
+
 ***  
 ## 数学公式与排版  
 
