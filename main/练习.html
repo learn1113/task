@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .notflo{
+            background-color: black;
+            font-size: 10px;
+            width: 100px;
+            height: 100px;
+            
+        }
+        .flo{
+            background-color: bisque;
+            font-size: 10px;
+            width: 100px;
+            height: 100px;
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('click',function(event){
+            x=event.clientX
+            y=event.clientY
+            a=document.createElement('div')
+            a.textContent='b'
+            a.style.position='fixed'
+            a.style.left=x+'px'
+            a.style.top=y+'px'
+            a.style.fontSize='20px'
+            a.style.color='fff0000'
+            document.body.appendChild(a)
+        })
+    </script>
+    <div style="background-color: black;width: 100px;height: 100px;"></div>
+    <div style="background-color: brown;width: 10px;height: 10px;float: left;"></div>
+    <p>文本</p>
+    <a src="https://tse4-mm.cn.bing.net/th/id/OIP-C.1qY14RGVG2-vWNlbsbH85AHaEU?rs=1&pid=ImgDetMain">链接</a>
+   <ol type="1" >
+    <li>导航</li>
+    <li>导航</li>
+    <li>导航</li>
+    <ul>导航</ul>
+   </ol>
+   <table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+   </table>  
+   <form>
+    用户名:<input type="text">
+    <input type="submit">
+   密码:<input type="password">
+    <input type="submit">
+    </form>
+    <div class="notflo">wjfkjajkdsflkj</div>
+    <div class="flo">
+        <div class="ew" style="float: left;background-color: aqua;height:10px; width: 10px;"></div>
+        <div class="ew" style="background-color: aquamarine;width: 10px;height: 10px;"></div>
+        <div class="ew" style="background-color: blue;width: 10px;height: 10px;float: left;"></div>
+    </div>
+
+    
+</body>
+</html>
