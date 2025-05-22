@@ -270,6 +270,26 @@ echo "<h3 align=center>payload的长度:".strlen($str7)."</h3>";
 
 
 ```  
-输入`javasc&#x86;pt:alert(1)`绕过过滤，浏览器会将&#x86解码成字母i  
+输入`javasc&#x86;pt:alert(1)`绕过过滤，浏览器会将&#x86解码成字母i。注意只有属性值的实体编码才会解码，在标签里的实体编码不会解码  
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <br><a h&#x72;ef="javascr&#x69pt:alert('Image not found!')">adsgfddsg</a>
+   
+</body>
+</html>
+```  
+浏览器解析为  
+```
 
+```
 
