@@ -289,7 +289,98 @@ echo "<h3 align=center>payload的长度:".strlen($str7)."</h3>";
 </html>
 ```  
 浏览器解析为  
-```
+<img src=imge\te.png>  
+  
+## level9  
+```php
+<!DOCTYPE html><!--STATUS OK--><html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<script>
+window.alert = function()  
+{     
+confirm("完成的不错！");
+ window.location.href="level10.php?keyword=well done!"; 
+}
+</script>
+<title>欢迎来到level9</title>
+</head>
+<body>
+<h1 align=center>欢迎来到level9</h1>
+<?php 
+ini_set("display_errors", 0);
+$str = strtolower($_GET["keyword"]);
+$str2=str_replace("script","scr_ipt",$str);
+$str3=str_replace("on","o_n",$str2);
+$str4=str_replace("src","sr_c",$str3);
+$str5=str_replace("data","da_ta",$str4);
+$str6=str_replace("href","hr_ef",$str5);
+$str7=str_replace('"','&quot',$str6);
+echo '<center>
+<form action=level9.php method=GET>
+<input name=keyword  value="'.htmlspecialchars($str).'">
+<input type=submit name=submit value=添加友情链接 />
+</form>
+</center>';
+?>
+<?php
+if(false===strpos($str7,'http://'))
+{
+  echo '<center><BR><a href="您的链接不合法？有没有！">友情链接</a></center>';
+        }
+else
+{
+  echo '<center><BR><a href="'.$str7.'">友情链接</a></center>';
+}
+?>
+<center><img src=level9.png></center>
+<?php 
+echo "<h3 align=center>payload的长度:".strlen($str7)."</h3>";
+?>
+</body>
+</html>
+
+```  
+利用浏览器的“编辑为html”功能直接讲链接改为`javascript:alert(1)`   
+
+## level10  
+```php
+<!DOCTYPE html><!--STATUS OK--><html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<script>
+window.alert = function()  
+{     
+confirm("完成的不错！");
+ window.location.href="level11.php?keyword=good job!"; 
+}
+</script>
+<title>欢迎来到level10</title>
+</head>
+<body>
+<h1 align=center>欢迎来到level10</h1>
+<?php 
+ini_set("display_errors", 0);
+$str = $_GET["keyword"];
+$str11 = $_GET["t_sort"];
+$str22=str_replace(">","",$str11);
+$str33=str_replace("<","",$str22);
+echo "<h2 align=center>没有找到和".htmlspecialchars($str)."相关的结果.</h2>".'<center>
+<form id=search>
+<input name="t_link"  value="'.'" type="hidden">
+<input name="t_history"  value="'.'" type="hidden">
+<input name="t_sort"  value="'.$str33.'" type="hidden">
+</form>
+</center>';
+?>
+<center><img src=level10.png></center>
+<?php 
+echo "<h3 align=center>payload的长度:".strlen($str)."</h3>";
+?>
+</body>
+</html>
+
 
 ```
+利用浏览器的“编辑为html”功能讲value 的值改为`"onclik=alert(1) `
 
